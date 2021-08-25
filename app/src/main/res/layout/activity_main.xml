@@ -10,12 +10,21 @@
 
 
     <View
-        android:id="@+id/button"
-        android:layout_width="64dp"
-        android:layout_height="64dp"
-        android:background="@color/teal_700"
-        android:text="Button"
-        tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="334dp" />
+        android:id="@+id/guide"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardCenter"
+        android:layout_width="318dp"
+        android:layout_height="202dp"
+        app:cardCornerRadius="8dp"
+        app:cardBackgroundColor="@color/teal_700"
+        app:layout_constraintCircle="@+id/guide"
+        app:layout_constraintCircleAngle="0"
+        app:layout_constraintCircleRadius="190dp" />
 
 </androidx.constraintlayout.motion.widget.MotionLayout>
